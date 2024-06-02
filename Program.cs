@@ -7,7 +7,7 @@ namespace projekt
     {
         static void Main(string[] args)
         {
-            int kune = 0;
+            int euro = 0;
             int centi = 0;
 
             Console.WriteLine("This program converts numerical representation of EUR and Cents to the Croatian words");
@@ -15,7 +15,7 @@ namespace projekt
             while (true)
             {
                 Console.Write("Enter EUR:");
-                kune = Int32.Parse(Console.ReadLine());
+                euro = Int32.Parse(Console.ReadLine());
                 Console.Write("Enter Cents:");
                 centi = Int32.Parse(Console.ReadLine());
                 MoneyTextConverter money = new MoneyTextConverter(kune, centi);
