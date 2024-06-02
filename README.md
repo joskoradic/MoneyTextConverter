@@ -8,3 +8,9 @@ To update to your own language replace following arrays content:
         static string[] tisucu = { "tisucu" ,"dvije" ,"tri" , "četiri" ,"pet", "šest" , "sedam" ,"osam" ,"devet" ,"deset" };
         static string tisuce = "tisuce";
         static string tisuca = "tisuca";
+
+
+Use case:
+MoneyTextConverter money = new MoneyTextConverter(kune, centi);  // create money object, Conversion is done while creating the object:
+money.ConvertedValueKune // this attribute contains text converted to EUR or USD ro any other currency
+money.ConvertedValuecenti // this attribute contain smaller units of the currency , for example cents
